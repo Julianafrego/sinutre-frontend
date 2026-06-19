@@ -12,8 +12,8 @@ import { Meal } from '@/types/mealSummary';
 import { api } from '@/lib/api';
 
 import {
-  MACRO_SUMMARY,
-  MEALS_SUMMARY,
+  //MACRO_SUMMARY,
+  //MEALS_SUMMARY,
   // RECENT_MEALS,
   // SAMPLE_MEAL_ITEMS,
 } from '@/data/mockData';
@@ -23,12 +23,12 @@ interface DashboardPageProps {
   drawerId: string;
 }
 
-const MODAL_MACROS = {
-  carbs: 0,
-  proteins: 0,
-  fats: 0,
-  calories: 0,
-};
+//const MODAL_MACROS = {
+ // carbs: 0,
+  //proteins: 0,
+  //fats: 0,
+  //calories: 0,
+//};
 
 export function DashboardPage({ drawerId }: DashboardPageProps) {
   const { user } = useAuth();
@@ -113,6 +113,14 @@ export function DashboardPage({ drawerId }: DashboardPageProps) {
     );
   }, [meals]);
 
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center w-full h-full">
+        <span className="text-gray-500">Carregando...</span>
+      </div>
+    );
+  }
+
 
   return (
     <>
@@ -134,7 +142,7 @@ export function DashboardPage({ drawerId }: DashboardPageProps) {
         <MealsList meals={meals} />
       </div>
 
-      <MealFab onSelectCategory={modal.selectedCategory} />
+      <MealFab onSelectCategory={modal.openWith} />
 
       <AddMealModal
         open={modal.open}
