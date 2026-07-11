@@ -6,22 +6,22 @@
 
   --color-base-100: oklch(100% 0 0);
   --color-base-200: oklch(96% 0.005 240);
-  --color-base-300: oklch(92% 0.01 240);
+  --color-base-300: oklch(92% 0.01 240); 
   --color-base-content: oklch(20% 0.02 240);
 
-  --color-primary: oklch(52% 0.17 155);
-  --color-primary-content: oklch(98% 0.01 155);
-  --color-secondary: oklch(60% 0.14 160);
-  --color-secondary-content: oklch(98% 0.01 160);
-  --color-accent: oklch(68% 0.16 145);
-  --color-accent-content: oklch(20% 0.03 145);
-  --color-neutral: oklch(30% 0.04 150);
-  --color-neutral-content: oklch(96% 0.01 150);
+  --color-primary: oklch(45% 0.18 135);        /* Verde-floresta escuro */
+  --color-primary-content: oklch(98% 0.01 135);
+  --color-secondary: oklch(55% 0.16 130);      /* Verde-floresta médio */
+  --color-secondary-content: oklch(98% 0.01 130);
+  --color-accent: oklch(38% 0.20 140);         /* Verde-floresta mais escuro */
+  --color-accent-content: oklch(98% 0.01 140);
+  --color-neutral: oklch(25% 0.06 130);
+  --color-neutral-content: oklch(96% 0.01 130);
 
   --color-info: oklch(70% 0.15 220);
   --color-info-content: oklch(98% 0.01 220);
-  --color-success: oklch(65% 0.2 145);
-  --color-success-content: oklch(98% 0.01 145);
+  --color-success: oklch(55% 0.20 140);        /* Verde floresta para sucesso */
+  --color-success-content: oklch(98% 0.01 140);
   --color-warning: oklch(80% 0.18 80);
   --color-warning-content: oklch(20% 0.04 80);
   --color-error: oklch(60% 0.22 25);
